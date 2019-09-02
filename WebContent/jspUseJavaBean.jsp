@@ -11,7 +11,8 @@
 	<hr/>
 	<%request.setCharacterEncoding("utf-8"); %>
 	<jsp:useBean id="myBean" class="JavaBean.JavaBeanDemo1" scope="page"/>
-	<%-- <jsp:setProperty name="myBean" property="*"/> --%><!-- 自动配置所有属性 -->
+	<%-- <jsp:setProperty name="myBean" property="*"/> --%><!-- 根据表单自动配置所有属性 -->
+	<%--根据表单配置单个属性 --%>
 	<jsp:setProperty name="myBean" property="name"/>
 	<jsp:setProperty name="myBean" property="age"/>
 	<jsp:setProperty name="myBean" property="sex"/>
