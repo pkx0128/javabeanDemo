@@ -11,7 +11,10 @@
 	<hr/>
 	<%request.setCharacterEncoding("utf-8"); %>
 	<jsp:useBean id="myBean" class="JavaBean.JavaBeanDemo1" scope="page"/>
-	<jsp:setProperty name="myBean" property="*"/><!-- 自动配置所有属性 -->
+	<%-- <jsp:setProperty name="myBean" property="*"/> --%><!-- 自动配置所有属性 -->
+	<jsp:setProperty name="myBean" property="name"/>
+	<jsp:setProperty name="myBean" property="age"/>
+	<jsp:setProperty name="myBean" property="sex"/>
 	
 	实例信息：
 	姓名：<%=myBean.getName() %><br/>
