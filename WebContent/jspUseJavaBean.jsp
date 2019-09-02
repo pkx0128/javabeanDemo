@@ -18,9 +18,12 @@
 	<jsp:setProperty name="myBean" property="sex"/> --%>
 	
 	<%--手工给javaBean属性赋值跟表单没关系 --%>
-	<jsp:setProperty name="myBean" property="name" value="test"/>
+<%-- 	<jsp:setProperty name="myBean" property="name" value="test"/>
 	<jsp:setProperty name="myBean" property="age" value="12"/>
-	<jsp:setProperty name="myBean" property="sex" value="男"/>
+	<jsp:setProperty name="myBean" property="sex" value="男"/> --%>
+	
+	<%--通过URL传参设置属性值 --%>
+	<jsp:setProperty name="myBean" property="name" param="name"/>
 	
 	实例信息：<br/>
 	姓名：<%=myBean.getName() %><br/>
